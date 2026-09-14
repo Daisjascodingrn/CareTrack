@@ -1,0 +1,63 @@
+body {
+    background-color: #f7f7fb;
+    color: #333;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+}
+
+header {
+    background-color: #f4f1f8;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.patient-card {
+    background-color: #f4f1f8;
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.patient-card h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
