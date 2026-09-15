@@ -7,10 +7,8 @@ const nameInput = document.querySelector('input[type="text"]');
 const dobInput = document.querySelector("#dob");
 const phoneInput = document.querySelector("#phone");
 const patientList = document.querySelector("#patientList");
-searchInput.addEventListener("input", function() {
-    console.log(searchInput.value);
-});
 const searchInput = document.querySelector("#searchInput");
+
 function displayPatients() {
     patientList.innerHTML = "";
 
@@ -24,7 +22,25 @@ function displayPatients() {
         `;
     }
 }
+function searchPatients() {
+    let searchTerm = searchInput.value.toLowerCase();
 
+    let filteredPatients = patients.filter(function(patient) {
+        return patient.name.toLowerCase().includes(searchTerm);
+    });
+
+    patientList.innerHTML = "";
+
+    for (let patient of filteredPatients) {
+        patientList.innerHTML += `
+            <div class="patient-card">
+                <h3>${patient.name}</h3>
+                <p>DOB: ${patient.dob}</p>
+                <p>Phone: ${patient.phone}</p>
+            </div>
+        `;
+    }
+}
 displayPatients();
 
 form.addEventListener("submit", function(event) {
@@ -52,5 +68,5 @@ form.addEventListener("submit", function(event) {
     form.reset();
 });
 searchInput.addEventListener("input", function() {
-    console.log(searchInput.value);
+    searchPatients();
 });
