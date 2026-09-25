@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CareTrack - Patient Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CareTrack</h1>
+        <p>Patient Profile</p>
+    </header>
+
+
+    <section>
+
+        <div id="patientProfile"></div>
+
+
+        <div class="profile-section">
+
+            <h2>Vitals</h2>
+
+
+            <p id="vitalsDisplay">
+                No vitals recorded.
+            </p>
+
+
+            <button
+                type="button"
+                onclick="showVitalsForm()"
+            >
+                + Record Vitals
+            </button>
+
+
+            <div id="bloodPressureResult"></div>
+
+
+            <div id="vitalsForm"></div>
+
+        </div>
+
+
+        <div class="profile-section">
+
+            <h2>Medications</h2>
+
+            <p>
+                No medications recorded.
+            </p>
+
+        </div>
+
+
+        <div class="profile-section">
+
+            <h2>Allergies</h2>
+
+            <p>
+                No allergies recorded.
+            </p>
+
+        </div>
+
+
+<div class="profile-section">
+
+    <h2>Medications</h2>
+
+    <div id="medicationList"></div>
+
+    <button
+        type="button"
+        onclick="showMedicationForm()"
+    >
+        + Add Medication
+    </button>
+
+    <div id="medicationForm"></div>
+
+</div>
+
+
+        <div class="profile-section">
+
+            <h2>Notes</h2>
+
+            <p>
+                No notes recorded.
+            </p>
+
+        </div>
+
+
+        <button
+            type="button"
+            onclick="goBack()"
+        >
+            Back to Patients
+        </button>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

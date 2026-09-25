@@ -13,28 +13,74 @@
         <p>Patient Management System</p>
     </header>
 
+
     <section>
+
         <h2>Add Patient</h2>
 
         <form>
-            <label>Patient Name</label>
-            <input type="text">
 
-            <label>Date of Birth</label>
-            <input type="text" id="dob">
+            <label for="patientName">
+                Patient Name
+            </label>
 
-            <label>Phone Number</label>
-            <input type="text" id="phone">
+            <input
+                type="text"
+                id="patientName"
+                required
+            >
 
-            <button type="submit">Add Patient</button>
+
+            <label for="dob">
+                Date of Birth
+            </label>
+
+            <input
+                type="date"
+                id="dob"
+                required
+            >
+
+
+            <label for="phone">
+                Phone Number
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                required
+            >
+
+
+            <button type="submit">
+                Add Patient
+            </button>
+
         </form>
+
     </section>
+
 
     <section>
-        <h2>Patients</h2>
-           <input type="text" id="searchInput" placeholder="Search patients...">
+
+        <h2>
+            Patients
+            <span id="patientCount">(0)</span>
+        </h2>
+
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search patients..."
+        >
+
+
         <div id="patientList"></div>
+
     </section>
+
 
     <script src="script.js"></script>
 

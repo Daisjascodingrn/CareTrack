@@ -1,63 +1,276 @@
 body {
+
     background-color: #f7f7fb;
+
     color: #333;
+
     font-family: Arial, sans-serif;
+
     text-align: center;
-    margin-top: 100px;
+
+    margin-top: 60px;
+
 }
+
 
 h1 {
+
     font-size: 40px;
+
 }
+
 
 p {
-    font-size: 20px;
+
+    font-size: 18px;
+
 }
+
 
 header {
+
     background-color: #f4f1f8;
+
     padding: 30px;
+
     border-radius: 12px;
+
     width: 80%;
+
     margin: auto;
+
 }
+
 
 section {
+
     background-color: white;
+
     width: 400px;
+
     margin: 30px auto;
+
     padding: 30px;
+
     border-radius: 12px;
+
+    box-sizing: border-box;
+
 }
+
 
 form {
+
     display: flex;
+
     flex-direction: column;
+
     gap: 10px;
+
 }
+
+
+label {
+
+    text-align: left;
+
+    font-weight: bold;
+
+}
+
 
 input {
+
     padding: 10px;
+
     border: 1px solid #ccc;
+
     border-radius: 6px;
+
+    box-sizing: border-box;
+
+    width: 100%;
+
 }
+
 
 button {
+
     padding: 12px;
+
     border: none;
+
     border-radius: 6px;
+
     cursor: pointer;
+
 }
+
+
+button:hover {
+
+    opacity: 0.9;
+
+}
+
 
 .patient-card {
+
     background-color: #f4f1f8;
+
     padding: 15px;
+
     margin-top: 15px;
+
     border-radius: 10px;
+
     text-align: left;
+
 }
 
+
 .patient-card h3 {
+
     margin-top: 0;
+
     font-size: 20px;
+
+}
+
+
+.profile-section {
+
+    margin-top: 25px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #ddd;
+
+}
+
+
+.patient-profile {
+
+    background-color: #f4f1f8;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+.blood-pressure-result {
+
+    margin-top: 20px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+.blood-pressure-value {
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+
+.blood-pressure-status {
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+}
+
+
+/* BP categories */
+
+.blood-pressure-result.normal {
+
+    background-color: #d9f2d9;
+
+    color: green;
+
+}
+
+
+.blood-pressure-result.elevated {
+
+    background-color: #fff0cc;
+
+    color: orange;
+
+}
+
+
+.blood-pressure-result.stage-1 {
+
+    background-color: #fff0cc;
+
+    color: orange;
+
+}
+
+
+.blood-pressure-result.stage-2 {
+
+    background-color: #ffd6d6;
+
+    color: red;
+
+}
+
+
+.blood-pressure-result.severe {
+
+    background-color: #ffd6d6;
+
+    color: darkred;
+
+}
+
+
+.blood-pressure-result.low {
+
+    background-color: #fff3a3;
+
+    color: #9a7d00;
+
+}
+
+
+/* Keeps older saved "High" readings visible */
+
+.blood-pressure-result.high {
+
+    background-color: #ffd6d6;
+
+    color: red;
+
+}
+.medication-card {
+
+    background-color: #f4f1f8;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    text-align: left;
+
+}
+
+
+.medication-card h3 {
+
+    margin-top: 0;
+
 }
